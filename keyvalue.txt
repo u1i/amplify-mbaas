@@ -1,0 +1,34 @@
+PMeNoNB95ILTNzqbmDxo1kxthYV9c2Hv
+
+https://api.cloud.appcelerator.com/v1/keyvalues/get.json?key=XXXXXV9c2Hv&name=bla
+
+https://api.cloud.appcelerator.com/v1/users/show.json?key=XXXXXxo1kxthYV9c2Hv
+
+
+
+https://docs.appcelerator.com/cloud/latest/?mobile=/api/KeyValues
+
+Get "bla"
+
+curl -i "https://api.cloud.appcelerator.com/v1/keyvalues/get.json?key=XXXX1kxthYV9c2Hv&name=bla"
+
+Count
+
+curl -i "https://api.cloud.appcelerator.com/v1/keyvalues/count.json?key=XXXbmDxo1kxthYV9c2Hv"
+
+Delete
+
+curl -i -X DELETE "https://api.cloud.appcelerator.com/v1/keyvalues/delete.json?key=XXXDxo1kxthYV9c2Hv&name=bla"
+
+Incr
+curl -X PUT -F "name=bla" -F "value=1" "https://api.cloud.appcelerator.com/v1/keyvalues/incrby.json?key=XXXXXbmDxo1kxthYV9c2Hv"
+
+Login
+
+curl -X POST -b cookies.txt -c cookies.txt -F "login=uli@hitzel.net" -F "password=XXXXX" "https://api.cloud.appcelerator.com/v1/users/login.json?key=XXXXXXXXxo1kxthYV9c2Hv&pretty_json=true"
+
+Set "bla"
+
+curl -b cookies.txt -c cookies.txt -X PUT -F "name=mykey-$RANDOM" -F "value=another" "https://api.cloud.appcelerator.com/v1/keyvalues/set.json?key=XXXXXo1kxthYV9c2Hv"
+
+curl -i "https://api.cloud.appcelerator.com/v1/keyvalues/get.json?key=XXXXXXo1kxthYV9c2Hv&name=mykey"
