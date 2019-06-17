@@ -2,3 +2,5 @@ appkey.conf
 cookies.txt
 data.txt
 data*.txt
+killswitch
+*log
